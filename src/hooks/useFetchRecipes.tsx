@@ -15,7 +15,7 @@ export function useFetchRecipes(page?: number): [boolean, string] {
         setIsLoading(true);
         const queryParam = new URLSearchParams();
         if (page) {
-          queryParam.append("limit", `${18}`);
+          queryParam.append("limit", '18');
           queryParam.append("skip", `${(page - 1) * 18}`);
           queryParam.append("sort", "createdAt:-1");
         }
