@@ -3,9 +3,9 @@ import Header from "./components/Header/Header";
 import styles from "./App.module.scss";
 import { Outlet } from "react-router-dom";
 import { Suspense } from "react";
-// import { seedRecipes } from "./data/seed";
+import { seedRecipes } from "./data/seed";
 
-// seedRecipes();
+seedRecipes();
 
 function App() {
   return (
